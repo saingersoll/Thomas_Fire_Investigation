@@ -22,9 +22,9 @@ Information about Landsat bands from USGS:
 
 - [What are the band designations for the Landsat satellites?](https://www.usgs.gov/faqs/what-are-band-designations-landsat-satellites)
 
--[Common Landsat Band Combinations](https://www.usgs.gov/media/images/common-landsat-band-combinations)
+- [Common Landsat Band Combinations](https://www.usgs.gov/media/images/common-landsat-band-combinations)
 
--[How do I use a scale factor with Landsat Level-2 science products?](https://www.usgs.gov/faqs/how-do-i-use-a-scale-factor-landsat-level-2-science-products)
+- [How do I use a scale factor with Landsat Level-2 science products?](https://www.usgs.gov/faqs/how-do-i-use-a-scale-factor-landsat-level-2-science-products)
 
 
 The data was accessed and pre-processed in the Microsoft Planetary Computer to remove data outside land and coarsen the spatial resolution ([Landsat Collection in MPC](https://planetarycomputer.microsoft.com/dataset/landsat-c2-l2)). Data should be used for visualization purposes only. 
