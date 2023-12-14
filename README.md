@@ -6,7 +6,7 @@ The goal of this notebook is to assess the impacts of the 2017 Thomas Fire on Sa
 
 We will also create a false color image using landsat data to display damages caused fire scar of the Thomas Fire in 2017.
 
-[SB_Thomas_Fire.png](attachment:606fd66e-0167-4d9b-b072-5817734e309e.png)
+![SB_Thomas_Fire.png](attachment:606fd66e-0167-4d9b-b072-5817734e309e.png)
 
 ### About the data
 
