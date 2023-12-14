@@ -2,11 +2,12 @@
 ## Overview
 The goal of this notebook is to assess the impacts of the 2017 Thomas Fire on Santa Barbara County, CA. We will be exploring the Air Quality Index of SB county between 17/01 - 18/10 to visualize the spike in particulate matter in correspondence to the Thomas Fire (17/12 - 18/01).
 
-![AQI-Assessment.png](attachment:3a5644eb-c51b-4efd-afa5-650df3160e82.png)
+![image](https://github.com/saingersoll/Thomas_Fire_Investigation/assets/141206781/5c9d53db-dafe-4228-8ca0-d161e53f816a)
 
 We will also create a false color image using landsat data to display damages caused fire scar of the Thomas Fire in 2017.
 
-![SB_Thomas_Fire.png](attachment:606fd66e-0167-4d9b-b072-5817734e309e.png)
+![image](https://github.com/saingersoll/Thomas_Fire_Investigation/assets/141206781/71247e31-b986-4dc3-83d9-42219ecc2fef)
+
 
 ### About the data
 
