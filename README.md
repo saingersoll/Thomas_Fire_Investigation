@@ -1,31 +1,46 @@
 # Thomas Fire Investigation
-## Overview
-The goal of this notebook is to assess the impacts of the 2017 Thomas Fire on Santa Barbara County, CA. We will be exploring the Air Quality Index of SB county between 17/01 - 18/10 to visualize the spike in particulate matter in correspondence to the Thomas Fire (17/12 - 18/01).
+![ThomasFireGE_12-13-2017](https://github.com/user-attachments/assets/b8cc539b-3be5-4de2-b0b9-e4ce8f155839) 
+Google earth V 6.2.2.6613. (December 13, 2017). Santa Barbara, United States. 34.6099° N, 120.0665° W, Eye alt 13.72 feet. DigitalGlobe 2020. http://www.earth.google.com [December 12, 2023].
+![AQI_Assessment](https://github.com/user-attachments/assets/c9148810-a1da-4c21-80ba-e8defb381315)
 
-![image](https://github.com/saingersoll/Thomas_Fire_Investigation/assets/141206781/5c9d53db-dafe-4228-8ca0-d161e53f816a)
+### Techniques Applied
 
-We will also create a false color image using landsat data to display damages caused fire scar of the Thomas Fire in 2017.
+    Directly accessing & processing MPC STAC data
+    Raster analysis applying false color imagery
+    Time series analysis
 
-![image](https://github.com/saingersoll/Thomas_Fire_Investigation/assets/141206781/71247e31-b986-4dc3-83d9-42219ecc2fef)
+### Objective
+
+To get a better understanding of the initial environmental and public health impacts caused by the Thomas Fire, together, we will explore the Air Quality Index (AQI) of SB County between 2017/01 - 2018/10. We’ll quanitfy and visualize the amount of particulate matter seen in the image abouve using both the Daily AQI and the average AQI over a 5 day rolling window in units of ppm. In addition, we will gain insight into what parts of Santa Barbara County were exposed to the Thomas Fire, through the examination of burn scars using false-color imaging on Landsat 8 satellite data from the Microsoft Planetary Computer (“MPC”). We will use a simplified collection of bands (red, green, blue, near-infrared and shortwave infrared) from the Landsat Collection 2 Level-2 atmosperically corrected surface reflectance data.
 
 
-### About the data
+### Data Access
 
-#### AQI Data
-In this notebook we will use [Air Quality Index (AQI)](https://www.airnow.gov/aqi/aqi-basics/) data from the [US Environmental Protection Agency](https://www.epa.gov) to visualize the impact on the AQI of the 2017 [Thomas Fire](https://en.wikipedia.org/wiki/Thomas_Fire) in Santa Barbara County[^1]. 
+`AQI Data for PPM Quantification & Trend Analysis Overtime`
 
-[^1]: AirNow.gov, U.S. EPA. (n.d.). Aqi Basics. AQI Basics | AirNow.gov. <https://www.airnow.gov/aqi/aqi-basics/>
 
-#### False Color Image Data
+The Daily Air Quality Index (AQI) data to quantify the particulate matter released into Santa Barbara County from the fire was collected here from the US Environmental Protection Agency to visualize the rolling AQI averages between 2017 and 2018.
 
-A simplified collection of bands (red, green, blue, near-infrared and shortwave infrared) from the Landsat Collection 2 Level-2 atmosperically corrected surface reflectance data, collected by the Landsat 8 satellite. 
 
-The data was accessed and pre-processed in the Microsoft Planetary Computer to remove data outside land and coarsen the spatial resolution ([Landsat Collection in MPC](https://planetarycomputer.microsoft.com/dataset/landsat-c2-l2))[^2]. Data should be used for visualization purposes only. 
+`Landsat Data for Burn Scar Visualization`
 
-[^2]: Microsoft Planetary Computer. Planetary Computer. (n.d.). <https://planetarycomputer.microsoft.com/dataset/landsat-c2-l2>
 
-Additionally a shapefile of fire perimeters in California during 2017. 
-The [complete file can be accessed in the CA state geoportal](https://gis.data.ca.gov/datasets/CALFIRE-Forestry::california-fire-perimeters-all-1/about)[^3].
+For our true and false color imagery, we are going to direct access Microsoft Planetary Computer Landsat Collection 2 Level-2 data. The STAC item utilized for this project is **LE07_L2SP_042036_20171217_02_T1**. The raster data was collected on 2017-12-17.
 
-[^3]: California fire perimeters (all). California State Geoportal. (n.d.). https://gis.data.ca.gov/datasets/CALFIRE-Forestry::california-fire-perimeters-all-1/about
+
+*This data should be used for visualization purposes only.*
+
+`California Fire Perimeter Data for Burn Scar Visualization`
+
+
+The shapefile of fire perimeters in California were provided by the California State Geoportal. The complete file can be accessed here.
+
+#### Data References
+
+    US Environmental Protection Agency (2023). Daily AQI by County [Data File]. Available from https://aqs.epa.gov/aqsweb/airdata/download_files.html#AQI. Accessed October 25, 2023
+
+    Microsoft Planetary Computer. Landsat Collection 2 Level-2 [Dataset]. Available from https://planetarycomputer.microsoft.com/dataset/landsat-c2-l2. Accessed November 28, 2023
+
+    California Department of Forestry and Fire Protection (2023). California Fire Perimeters (all) [Data File]. Available from https://gis.data.ca.gov/datasets/CALFIRE-Forestry::california-fire-perimeters-all-1/about. Accessed November 28, 2023
+
 
