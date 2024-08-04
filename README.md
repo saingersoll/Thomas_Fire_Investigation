@@ -19,13 +19,13 @@ To get a better understanding of the initial environmental and public health imp
 `AQI Data for PPM Quantification & Trend Analysis Overtime`
 
 
-The Daily Air Quality Index (AQI) data to quantify the particulate matter released into Santa Barbara County from the fire was collected here from the US Environmental Protection Agency to visualize the rolling AQI averages between 2017 and 2018.
+The [Daily Air Quality Index (AQI)](https://www.airnow.gov/aqi/aqi-basics/) data to quantify the particulate matter released into Santa Barbara County from the fire was collected here from the [US Environmental Protection Agency](https://aqs.epa.gov/aqsweb/airdata/download_files.html#AQI) to visualize the rolling AQI averages between 2017 and 2018.
 
 
 `Landsat Data for Burn Scar Visualization`
 
 
-For our true and false color imagery, we are going to direct access Microsoft Planetary Computer Landsat Collection 2 Level-2 data. The STAC item utilized for this project is **LE07_L2SP_042036_20171217_02_T1**. The raster data was collected on 2017-12-17.
+For our true and false color imagery, we are going to direct access [Microsoft Planetary Computer Landsat Collection 2 Level-2 data](https://planetarycomputer.microsoft.com/dataset/landsat-c2-l2). The STAC item utilized for this project is **LE07_L2SP_042036_20171217_02_T1**. The raster data was collected on 2017-12-17.
 
 
 *This data should be used for visualization purposes only.*
@@ -33,7 +33,7 @@ For our true and false color imagery, we are going to direct access Microsoft Pl
 `California Fire Perimeter Data for Burn Scar Visualization`
 
 
-The shapefile of fire perimeters in California were provided by the California State Geoportal. The complete file can be accessed here.
+The shapefile of fire perimeters in California were provided by the California State Geoportal. The [complete file can be accessed here.](https://gis.data.ca.gov/datasets/CALFIRE-Forestry::california-fire-perimeters-all-1/about)
 
 #### Data References
 
