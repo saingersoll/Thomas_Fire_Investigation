@@ -1,7 +1,8 @@
 # Thomas Fire Investigation of Impacts On Santa Barbara County (2017-2018)
 ![ThomasFireGE_12-13-2017](https://github.com/user-attachments/assets/b8cc539b-3be5-4de2-b0b9-e4ce8f155839) 
 Google earth V 6.2.2.6613. (December 13, 2017). Santa Barbara, United States. 34.6099° N, 120.0665° W, Eye alt 13.72 feet. DigitalGlobe 2020. http://www.earth.google.com [December 12, 2023].
-![AQI_Assessment](https://github.com/user-attachments/assets/c9148810-a1da-4c21-80ba-e8defb381315)
+<img width="6567" height="2318" alt="santa_barbara_aqi_thomas_fire" src="https://github.com/user-attachments/assets/2137cc75-2d47-4a05-87e8-f95c5dba08d2" />
+
 
 ### Techniques Applied
 
